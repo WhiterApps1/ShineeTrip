@@ -314,7 +314,7 @@ Our mission is simple: to make every journey shine with comfort, safety, and unf
                     <img src="img/rooms/1.png" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
+                            <!-- <span>From $250/night</span> -->
                             <h3>Superior Room</h3>
                         </div>
                         <a href="#" class="line-button">book now</a>
@@ -326,7 +326,7 @@ Our mission is simple: to make every journey shine with comfort, safety, and unf
                     <img src="img/rooms/2.png" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
+                            <!-- <span>From $250/night</span> -->
                             <h3>Deluxe Room</h3>
                         </div>
                         <a href="#" class="line-button">book now</a>
@@ -338,7 +338,7 @@ Our mission is simple: to make every journey shine with comfort, safety, and unf
                     <img src="img/rooms/3.png" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
+                            <!-- <span>From $250/night</span> -->
                             <h3>Signature Room</h3>
                         </div>
                         <a href="#" class="line-button">book now</a>
@@ -350,7 +350,7 @@ Our mission is simple: to make every journey shine with comfort, safety, and unf
                     <img src="img/rooms/4.png" alt="">
                     <div class="room_heading d-flex justify-content-between align-items-center">
                         <div class="room_heading_inner">
-                            <span>From $250/night</span>
+                            <!-- <span>From $250/night</span> -->
                             <h3>Couple Room</h3>
                         </div>
                         <a href="#" class="line-button">book now</a>
@@ -453,7 +453,7 @@ No.52A, Baroda Street, opp. Bharat Chambers, Carnac Bunder, Masjid Bandar East, 
                                 Reservation
                             </h3>
                             <p class="footer_text">+91-9459336939 | +91-9022530454 <br>
-                                reservation@shineetrip.com</p>
+                                bookmytrip@shineetrip.com</p>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-6 col-lg-2">
@@ -537,7 +537,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                     </div>
                                     <div class="col-xl-6">
                                         <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Adult">1</option>
+                                             <option data-display="Adult">1</option>
                                             <option value="1">2</option>
                                             <option value="2">3</option>
                                             <option value="3">4</option>
@@ -614,12 +614,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         });
     </script>
     <script>
-        document.querySelectorAll('.book_now, .line-button').forEach(button => {
-          button.addEventListener('click', (e) => {
-            e.preventDefault(); 
-            alert('Coming Soon!\nThis feature will be available soon. Stay tuned!');
-          });
+
+document.querySelectorAll('.book_now, .line-button').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        Swal.fire({
+            title: '🚀 Update Incoming!', 
+            html: '<p style="text-align: center; font-size: 18px; margin: 20px 0;">Coming Soon!</p>', 
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#ff6b6b',
+            background: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)', 
+            color: '#333',
+            backdrop: 'rgba(0,0,0,0.6)',
+            width: '500px', 
+            showClass: {
+                popup: 'animate__animated animate__zoomIn' 
+            },
+            hideClass: {
+                popup: 'animate__animated animate__zoomOut'
+            },
+            customClass: {
+                popup: 'swal-popup-v2',
+                title: 'swal-title-v2',
+                htmlContainer: 'swal-html-v2'
+            }
         });
+    });
+});
       </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

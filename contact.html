@@ -27,7 +27,7 @@
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
-<body>
+<b>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -192,21 +192,23 @@
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
-                                <h3>Buttonwood, California.</h3>
-                                <p>Rosemead, CA 91770</p>
+                                <h3> Elphinstone Estate, Town Scheme, Plot
+                                    No.52A, Baroda Street, opp. Bharat Chambers, Carnac Bunder, Masjid Bandar East, Masjid Bandar, <br>
+                                                                    </h3>
+                                <p>Mumbai, Maharashtra 400009</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <h3>+1 253 565 2365</h3>
+                                <h3>+91-9459336939 | +91-9022530454</h3>
                                 <p>Mon to Fri 9am to 6pm</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                <h3>support@colorlib.com</h3>
+                                <h3>bookmytrip@shineetrip.com</h3>
                                 <p>Send us your query anytime!</p>
                             </div>
                         </div>
@@ -398,9 +400,37 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     
             });
         </script>
-
-
-
+        <script>
+document.querySelectorAll('.book_now, .line-button').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        Swal.fire({
+            title: '🚀 Update Incoming!', 
+            html: '<p style="text-align: center; font-size: 18px; margin: 20px 0;">Coming Soon!</p>', 
+            icon: 'success', 
+            showCancelButton: false,
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#ff6b6b',
+            background: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+            color: '#333',
+            backdrop: 'rgba(0,0,0,0.6)',
+            width: '500px', 
+            showClass: {
+                popup: 'animate__animated animate__zoomIn'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__zoomOut'
+            },
+            customClass: {
+                popup: 'swal-popup-v2',
+                title: 'swal-title-v2',
+                htmlContainer: 'swal-html-v2'
+            }
+        });
+    });
+});
+        </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
-    
     </html>

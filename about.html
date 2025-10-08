@@ -270,7 +270,7 @@ No.52A, Baroda Street, opp. Bharat Chambers, Carnac Bunder, Masjid Bandar East, 
                                 Reservation
                             </h3>
                             <p class="footer_text">+91-9459336939 | +91-9022530454 <br>
-                                reservation@shineetrip.com</p>
+                                bookmytrip@shineetrip.com</p>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-6 col-lg-2">
@@ -431,13 +431,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         });
     </script>
     <script>
-        document.querySelectorAll('.book_now, .line-button').forEach(button => {
-          button.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('Coming Soon!\nThis feature will be available soon. Stay tuned!');
-          });
+        // Simplified SweetAlert v2.0 - Same Design, Coming Soon Only
+document.querySelectorAll('.book_now, .line-button').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        Swal.fire({
+            title: '🚀 Update Incoming!', 
+            html: '<p style="text-align: center; font-size: 18px; margin: 20px 0;">Coming Soon!</p>',
+            icon: 'success', 
+            showCancelButton: false,
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#ff6b6b',
+            background: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)', 
+            color: '#333',
+            backdrop: 'rgba(0,0,0,0.6)',
+            width: '500px', 
+            showClass: {
+                popup: 'animate__animated animate__zoomIn' 
+            },
+            hideClass: {
+                popup: 'animate__animated animate__zoomOut'
+            },
+            customClass: {
+                popup: 'swal-popup-v2',
+                title: 'swal-title-v2',
+                htmlContainer: 'swal-html-v2'
+            }
         });
+    });
+});       
       </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
-
 </html>
